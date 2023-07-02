@@ -13,7 +13,7 @@ Welcome to the Software Engineering Notes Repository! This repository aims to pr
 
 ## Topics Covered
 The repository aims to cover all software engineering topics: the following software engineering topics are what have been covered so far
-+ [0x00. Shell Navigation](./'0x00. Shell, navigation')
++ [0x00. Shell Navigation](./0x00.%20Shell%2C%20navigation)
 + 
 
 ## Usage
