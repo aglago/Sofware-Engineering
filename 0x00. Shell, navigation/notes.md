@@ -314,12 +314,19 @@ There may be additional options depending on your operating system.
 + If you provide an absolute path, the directory will be created at the specified location.
 
 ### Relative and absolute path
-+ .
-- .
+1. **Relative Path**: A relative path specifies the location of a file or directory relative to your current working directory. It is like giving directions based on your current position. Think of it as navigating through directories using landmarks or directions. For example:
+
++ If you are currently in the "Documents" folder, a relative path like "Pictures/photo.jpg" would refer to the file "photo.jpg" inside the "Pictures" folder relative to your current location.
++ The relative path doesn't start with a slash ("/") and is based on your current position.
+
+2. **Absolute Path**: An absolute path specifies the complete and exact location of a file or directory from the root of the file system. It provides the full path starting from the root directory, regardless of your current working directory. It's like specifying the address of a location without any reference to your current position. For example:
+
++ An absolute path like "/home/user/Documents/file.txt" would point directly to the file "file.txt" in the "Documents" folder, regardless of where you are currently located in the file system.
+The absolute path always starts with a slash ("/") and gives the full path from the root directory.
 
 Here are a few examples of using the mkdir command:
 
-1. Create a directory named "my_directory" in the current working directory:
+1. Create a directory named "`my_directory`" in the current working directory:
 
 ```bash
 mkdir my_directory
