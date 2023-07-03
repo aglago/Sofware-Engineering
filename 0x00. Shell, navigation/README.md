@@ -16,7 +16,7 @@ This repository contains detailed notes on various software engineering topics, 
 + Ubuntu 20.04 (at Microsoft Store for windows users)
 
 ## Resources
-### Read or watch:
+### Read or watch: [Shell](http://linuxcommand.org/index.php)
 
 + Linux navigation
 + Linux - looking around
