@@ -23,16 +23,16 @@ This repository contains detailed notes on various software engineering topics, 
 + Linux - manipulating files
 
 ### Or in your terminal:
-+ man pwd
-+ man ls
-+ man cd
-+ man less
-+ man touch
-+ man cp
-+ man mv
-+ man rm
-+ man mkdir
-+ man rmdir
++ `man pwd`
++ `man ls`
++ `man cd`
++ `man less`
++ `man touch`
++ `man cp`
++ `man mv`
++ `man rm`
++ `man mkdir`
++ `man rmdir`
 
 ### Extra resources:
 + Linux - /tmp
