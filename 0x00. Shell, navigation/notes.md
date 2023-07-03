@@ -56,26 +56,46 @@ used to view content of text tiles
 + **q**: quits the viewing of the file.
 
 ## `file`
-used to determine what type of data a file contains.  
+used to determine what type of data a file contains, whether the file contains text, script among others
+
+## `mime-type`
+It is a string of text that represents the type and subtype of the data contained in a file.  
   
-Forexample: 
-+ in my directory below, I have 2 files. 
-+ `myfile1` contains plain text
-+ `myfile2` contains a shell script
-
-**BONUS COMMAND**  
-`cat`: the `cat` command is used to display the content of a file.
-
-
+Consider this image below:  
 ![picture of terminal showing the files](./images/filetype1.png)
+
+**BONUS COMMAND**
+`cat`: the `cat` command is used to display the content of a file.  
+
+Forexample: 
++ in my `~/shellpractice/file` directory, I have 2 files. 
++ `myfile1` contains plain text, "Ami is a software engineer"
++ `myfile2` contains a shell script, "#!/bin/bash" (*will talk more about shell scripts later in the course*)
++ the `file` command tells that the data contained in myfile1 is ASCII text while the data contained in `myfile2` is a shell script.
 
 ### How the file commands work
 + the file command looks at the contents of a file and checks it against a set of rules to figure out what type of file it is. 
-+ these rules are stored in a file called the "magic" file. 
++ these rules are stored in a file called the "magic" file (*you can file the exact location of the magic file using this command:* `file -v`)
 + By comparing the patterns and characteristics of the file to the rules in the "magic" file, the file command can tell you if it's an image, a text file, a compressed archive, or something else. 
 + It's like a detective that examines the file and uses clues to determine its type.
 
-### how to create custom file types
+### the magic file
++ The magic file is typically used to define custom magic patterns and rules specific to your system or applications. 
++ It allows you to extend the default magic patterns provided by the file command. 
++ However, if you haven't added any customizations, the file may be empty.  
+
++ If you wish to customize the behavior of the file command or add your own magic rules, you can follow the format and guidelines described in the `magic(5)` man page. 
++ This allows you to define your own rules based on the file's content, such as identifying specific file formats or MIME types.  
+
+### how to create custom file types a.k.a how to customize my magic file
 + since the `file` command uses rules stored in a magic file, we can create a magic file and define a rule.
-+ Forexample, we want all files starting with the word "Ami" to be identified as Ami file type.
-+ 
++ Forexample, if we want all files starting with the word "Ami" to be identified as Ami text, instead of ASCII text and the mime type as `text/ami` instead of the default `text/plain`.
++ **Steps:**  
+1. create a magic file 
+2. define the rule in the magic file
+3. save the magic file
+4. test the file with the file command specifying the magic file created (use option `-m` to specify path to magic file)
+5. `file` command should now identify the `myfile1` which begins with "Ami" as text/ami
+
+![magic demonstration](./images/filemagic.png)
+
