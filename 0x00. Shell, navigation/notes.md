@@ -62,7 +62,7 @@ used to determine what type of data a file contains, whether the file contains t
 It is a string of text that represents the type and subtype of the data contained in a file.  
   
 Consider this image below:  
-![File Type Demonstration](/home/amimanye/images/filetype1.png)
+![File Type Demonstration](../images/filetype1.png)
 
 **BONUS COMMAND**  
 `cat`: the `cat` command is used to display the content of a file.  
@@ -97,7 +97,7 @@ Forexample:
 4. test the file with the file command specifying the magic file created (use option `-m` to specify path to magic file)
 5. `file` command should now identify the `myfile1` which begins with "Ami" as text/ami
 
-![magic demonstration](/home/amimanye/images/filemagic.png)
+![magic demonstration](../images/filemagic.png)
 
 
 ## Let's take a tour
@@ -120,7 +120,7 @@ a symbolic link is a special kind of file that acts as a shortcut or pointer to 
 2. create symbolink
 3. navigate to symbolink
 
-![symbolink](/home/amimanye/images/symbolink.png)
+![symbolink](../images/symbolink.png)
 
 
 # Manipulating files
