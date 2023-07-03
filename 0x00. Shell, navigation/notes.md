@@ -62,9 +62,9 @@ used to determine what type of data a file contains, whether the file contains t
 It is a string of text that represents the type and subtype of the data contained in a file.  
   
 Consider this image below:  
-![picture of terminal showing the files](./images/filetype1.png)
+![File Type Demonstration](./images/filetype1.png)
 
-**BONUS COMMAND**
+**BONUS COMMAND**  
 `cat`: the `cat` command is used to display the content of a file.  
 
 Forexample: 
