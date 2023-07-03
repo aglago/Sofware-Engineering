@@ -156,7 +156,7 @@ For example:
 
 + file{1,2,3}.txt matches files like "file1.txt", "file2.txt", or "file3.txt".
 
-## `cp`
+## `cp` command
 The `cp` command is used in Unix-like operating systems to copy files and directories.  
 It allows you to create a duplicate of a file or copy multiple files from one location to another.  
   
@@ -202,7 +202,7 @@ cp -p source_file destination_file
 It's important to note that the `cp` command can overwrite files without warning, so use it with caution. To avoid accidental overwrites, you can use the `-i` option to prompt for confirmation.
 
 
-## `mv`
+## `mv` command
 
 The mv command is used to move or rename files and directories in a command-line or terminal environment.  
 It allows you to change the location or name of a file or directory within the file system.  
@@ -245,5 +245,98 @@ This command moves the entire directory to the specified destination and renames
 
 
 
-## `rm`
+## `rm` command
++ The rm command is used to remove or delete files and directories. 
++ It stands for "remove." 
++ The rm command can be powerful and should be used with caution because it permanently deletes files and directories, bypassing the trash or recycle bin.  
+  
+*The basic syntax of the rm command is:*
 
+```bash
+rm [options] file1 file2 ...
+```  
+where file1, file2, and so on represent the names of the files or directories you want to remove.  
+  
+
+Here are some commonly used options with the rm command:
+
++ `-r` or `-R`: Recursively removes directories and their contents. Use this option when deleting directories.
++ `-f`: Forces the removal of files without prompting for confirmation, even if the files are write-protected or the user does not have sufficient permissions.
++ `-i`: Interactive mode prompts for confirmation before removing each file.
++ `-v`: Verbose mode displays detailed information about the files being removed.
+
+Examples:
+
+1. To remove a single file:
+
+```bash
+rm filename.txt
+```
+
+2. To remove multiple files:
+
+```bash
+rm file1.txt file2.txt file3.txt
+```
+
+3. To remove a directory and its contents recursively:
+
+```bash
+rm -r directoryname
+```
+
+4. To remove files interactively with confirmation prompts:
+
+```bash
+rm -i file1.txt file2.txt
+```
+
+
+## `mkdir` command
++ The mkdir command is used to create directories (folders) in a file system. 
++ It stands for "make directory."  
+  
+Here's how you can use the mkdir command and its basic implementation:
+
+```bash
+mkdir [options] directory_name
+```  
+
+`[options] (optional)`: You can use various options with the `mkdir` command to modify its behavior. Some common options include:  
+
++ `-p or --parents`: Create parent directories if they don't exist.
++ `-m or --mode`: Set the permissions for the created directory.
++ `-v or --verbose`: Display a message for each created directory.
+  
+There may be additional options depending on your operating system.
++ `directory_name`: Specify the name and location of the directory you want to create. 
++ If you provide a relative path, the directory will be created relative to your current working directory. 
++ If you provide an absolute path, the directory will be created at the specified location.
+
+### Relative and absolute path
++ .
+- .
+
+Here are a few examples of using the mkdir command:
+
+1. Create a directory named "my_directory" in the current working directory:
+
+```bash
+mkdir my_directory
+```
+
+2. Create a directory named "`my_directory`" with verbose output:
+
+```bash
+mkdir -v my_directory
+```
+
+3. Create nested directories "parent/child/grandchild":
+
+```bash
+mkdir -p parent/child/grandchild
+```
+4. Create a directory with specific permissions:
+```bash
+mkdir -m 755 my_directory
+```
