@@ -99,3 +99,151 @@ Forexample:
 
 ![magic demonstration](./images/filemagic.png)
 
+
+## Let's take a tour
+1. Navigate to the top-most directory of your linux system: `cd /` (called the `root`)
+2. List all the files and directories in the root directory
+3. Enter each directory one at a time: `cd directory_name`
+4. List the files
+5. If there is an interesting file, use the file command to determine its contents.
+6. For text files, use `less` command to view them.
+
+## Symbolic link
+a symbolic link is a special kind of file that acts as a shortcut or pointer to another file or directory. you can create a symbolic link to a frequently accessed file and place it on your desktop or in a different folder for easier access.
+
+### How to create a symbolic link
+*syntax*: `ln -s /path/to/target/directory/or/file /path/to/symbolic/link`  
+*Example:* let us create a symbolic link in `/` directory so that anytime we `cd` into the symbolic link, it takes us straight to `/home/amimanye/shellpractice/file`
+
++ **Steps**
+1. Navigate to `/`
+2. create symbolink
+3. navigate to symbolink
+
+![symbolink](./images/symbolink.png)
+
+
+# Manipulating files
+## commands
++ `cp`: used to copy content of files
++ `mv`: used to move or rename files
++ `rm`: used to delete files and non empty directories
++ `mkdir`: used to create a directory
+
+## wildcards
+Wildcards are special characters that help you perform actions on multiple files or match patterns more flexibly.
+
+### commonly used wildcards
+1. **Asterisk (\*)**:  
+It represents any number of characters (including zero characters) in a filename or pattern  
+For example:
+
++ *.txt matches any file with a ".txt" extension.
++ file* matches any filename starting with "file".
+
+2. **Question Mark (?)**: It represents a single character in a filename or pattern.  
+For example:
++ f?le.txt matches files like "file.txt" or "fable.txt".
+
+3. **Square Brackets** ([]): It represents a range or set of characters to match.  
+For example:
+
++ [abc].txt matches files like "a.txt", "b.txt", or "c.txt".
++ [0-9].txt matches files like "1.txt", "9.txt", etc.
+
+4. **Braces ({})**: It represents multiple options or alternatives.  
+For example:
+
++ file{1,2,3}.txt matches files like "file1.txt", "file2.txt", or "file3.txt".
+
+## `cp`
+The `cp` command is used in Unix-like operating systems to copy files and directories.  
+It allows you to create a duplicate of a file or copy multiple files from one location to another.  
+  
+The basic syntax of the `cp` command is as follows:  
+
+```bash
+cp [options] source_file destination_file
+```
+  
+Here are some commonly used options with the `cp` command:
+
++ `-r` or `-R`: Recursively copy directories and their contents.
++ `-i`: Prompt for confirmation before overwriting an existing file.
++ `-v`: Enable verbose output, displaying information about each file being copied.
++ `-p`: Preserve file attributes such as timestamps, permissions, and ownership during the copy.
++ `-u`: Copy only when the source file is newer than the destination file or when the destination file does not exist.  
+  
+Examples of using the cp command:
+
+*Copy a file to another location:*
+```bash
+cp source_file destination_file
+```
+
+*Copy a directory and its contents recursively:*
+
+```bash
+cp -r source_directory destination_directory
+```
+
+*Copy multiple files to a directory:*
+
+```bash
+cp file1 file2 file3 destination_directory
+```
+
+*Copy a file, preserving its attributes:*
+
+```bash
+cp -p source_file destination_file
+```
+  
+It's important to note that the `cp` command can overwrite files without warning, so use it with caution. To avoid accidental overwrites, you can use the `-i` option to prompt for confirmation.
+
+
+## `mv`
+
+The mv command is used to move or rename files and directories in a command-line or terminal environment.  
+It allows you to change the location or name of a file or directory within the file system.  
+
+### syntax
+```bash
+mv [options] source destination
+```
++ the `mv` command takes two arguments: the source and destination. 
+
+### options
++ `-i` (interactive): Prompts for confirmation before overwriting an existing file.
++ `-f` (force): Forces the move or rename operation, overwriting any existing files without prompting.
++ `-v` (verbose): Prints detailed information about the files being moved.
+
++ Here's a simplified explanation of how the mv command works:
+1. Moving a file: To move a file from one location to another, you specify the source file's current path and the destination path where you want to move the file. For example:
+
+```bash
+mv /path/to/source/file.txt /path/to/destination/
+```
+
+This command moves the file `file.txt` from its current location to the specified destination directory.
+
+2. Renaming a file: To rename a file, you provide the current file path as the source and the new file name as the destination. For example:
+
+```bash
+mv /path/to/old/file.txt /path/to/new/filename.txt
+```  
+
+This command renames the file file.txt to filename.txt while keeping it in the same directory.
+
+3. Moving and renaming directories: The mv command can also be used to move and rename directories. The syntax is similar to moving or renaming files. For example:
+
+```bash
+mv /path/to/source/directory /path/to/destination/newname
+```
+
+This command moves the entire directory to the specified destination and renames it to newname.
+
+
+
+## `rm`
+
