@@ -94,6 +94,6 @@ after completing these instructions,
 # Get In Touch With Me
 Feel free to get in touch if you need help with any of these tasks.  
 Twitter: [@ami_aglago](https://twitter.com/ami_aglago)  
-WhatsApp: [+1234567890](https://wa.me/233509581027?text=Kindle%20be%20brief%20and%20straightforward)  
-LinkedIn: [Your Name](https://www.linkedin.com/in/aglago)  
+WhatsApp: [+233 (0) 509581027](https://wa.me/233509581027?text=Kindle%20be%20brief%20and%20straightforward)  
+LinkedIn: [Samuella Manye Aglago](https://www.linkedin.com/in/aglago)  
 
