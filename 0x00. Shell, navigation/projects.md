@@ -1,14 +1,14 @@
 + Inspired by [ALX](https://www.alxafrica.com/)
 
 # Table of Content
-+ [Task 0](#task-0.)
-+ [Task 1](#task-1.)
-+ [Task 2](#task-2.)
-+ [Task 3](#task-3.)
-+ [Task 4](#task-4.)
-+ [Task 5](#task-5.)
-+ [Task 6](#task-6.)
-+ [Contact](#contact)
++ [Task 0](#task-0)
++ [Task 1](#task-1)
++ [Task 2](#task-2)
++ [Task 3](#task-3)
++ [Task 4](#task-4)
++ [Task 5](#task-5)
++ [Task 6](#task-6)
++ [Contact](#get-in-touch-with-me)
 
 ## Task 0.
 ### Instructions
@@ -91,9 +91,9 @@ after completing these instructions,
 + `ls` should contain a directory named `useful_directory`
 + `ls` should not contain a directory named `useful_directory`
 
-# contact
+# Get In Touch With Me
 Feel free to get in touch if you need help with any of these tasks.  
-Twitter: [@ami_aglago](https://twitter.com/ami_aglago)
-WhatsApp: [+1234567890](https://wa.me/233509581027?text=Kindle%20be%20brief%20and%20straightforward)
-LinkedIn: [Your Name](https://www.linkedin.com/in/aglago)
+Twitter: [@ami_aglago](https://twitter.com/ami_aglago)  
+WhatsApp: [+1234567890](https://wa.me/233509581027?text=Kindle%20be%20brief%20and%20straightforward)  
+LinkedIn: [Your Name](https://www.linkedin.com/in/aglago)  
 
