@@ -63,8 +63,9 @@ Forexample:
 + `myfile1` contains plain text
 + `myfile2` contains a shell script
 
-**BONUS COMMAND**
+**BONUS COMMAND**  
 `cat`: the `cat` command is used to display the content of a file.
+
 
 ![picture of terminal showing the files](./images/filetype1.png)
 
