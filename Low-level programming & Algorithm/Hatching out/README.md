@@ -99,16 +99,15 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 + [ALX PROJECT TASKS AND SOLUTIONS](./projects.md)
 
 ## Summary
-ChatGPT
 The C "Hello, World!" program is a simple program that serves as a starting point for learning the C programming language. It typically consists of a few lines of code that display the message "Hello, World!" on the screen. Here's a summary of the program:  
   
-Include the necessary header file: In C, we begin by including the necessary header files that provide the required functions and definitions. For the "Hello, World!" program, we need to include the <stdio.h> header file, which provides the standard input/output functions.  
+1. **Include the necessary header file**: In C, we begin by including the necessary header files that provide the required functions and definitions. For the "Hello, World!" program, we need to include the `<stdio.h>` header file, which provides the standard input/output functions.  
   
-Write the main function: In C, every program starts execution from the main function. The main function serves as the entry point for the program. It has a return type of int, indicating that it should return an integer value.  
-  
-Write the code to display the message: Inside the main function, we use the printf function from the <stdio.h> header file to display the "Hello, World!" message on the screen. The printf function takes a format string as an argument, which contains the text to be displayed. In this case, the format string is "Hello, World!\n".  
-  
-Return from the main function: After displaying the message, we use the return statement to exit the main function and return a value to the operating system. In the case of the "Hello, World!" program, we usually return 0 to indicate successful execution.  
+2. **Write the main function**: In C, every program starts execution from the `main` function. The `main` function serves as the entry point for the program. It has a return type of `int`, indicating that it should return an integer value.  
+
+3. **Write the code to display the message**: Inside the `main` function, we use the `printf` function from the `<stdio.h>` header file to display the "Hello, World!" message on the screen. The `printf` function takes a format string as an argument, which contains the text to be displayed. In this case, the format string is "Hello, World!\n".  
+
+4. **Return from the main function**: After displaying the message, we use the `return` statement to exit the `main` function and return a value to the operating system. In the case of the "Hello, World!" program, we usually return `0` to indicate successful execution.  
   
 Here's the code for the "Hello, World!" program in C:
 
