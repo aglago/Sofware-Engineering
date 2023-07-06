@@ -13,8 +13,8 @@ Welcome to the Software Engineering Notes Repository! This repository aims to pr
 
 ## Topics Covered
 The repository has covered the following software engineering topics so far:
-+ [Software Engineering Tolls](./'0x00.Software Engineering Tools')
-+ [Low-level programming & Algorithm](./0x02. Low-level programming & Algorithm')
++ [Software Engineering Tolls](./0x00.%20Software%20Engineering%20Tools)
++ [Low-level programming & Algorithm](./0x02.%20Low-level%20programming%20&%20Algorithm)
 
 ## Contributing
 Contributions to this repository are welcome! If you'd like to contribute, please follow these steps:
