@@ -13,17 +13,18 @@ Welcome to the Software Engineering Notes Repository! This repository aims to pr
 
 ## Topics Covered
 The repository has covered the following software engineering topics so far:
-+ []()
-+ []()
++ [Software Engineering Tolls](./'0x00.Software Engineering Tools')
++ [Low-level programming & Algorithm](./0x02. Low-level programming & Algorithm')
 
-Contributing
+## Contributing
 Contributions to this repository are welcome! If you'd like to contribute, please follow these steps:
 
-Fork the repository.
-Create a new branch for your changes.
-Make your modifications and additions.
-Test your changes to ensure they don't introduce any issues.
-Commit your changes and push them to your forked repository.
-Submit a pull request, clearly explaining the purpose and impact of your changes.
-License
-This repository is licensed under the MIT License.
++ Fork the repository.
++ Create a new branch for your changes.
++ Make your modifications and additions.
++ Test your changes to ensure they don't introduce any issues.
++ Commit your changes and push them to your forked repository.
++ Submit a pull request, clearly explaining the purpose and impact of your changes.
+
+## License
+This repository is licensed under the [MIT License](./LICENSE.md).
