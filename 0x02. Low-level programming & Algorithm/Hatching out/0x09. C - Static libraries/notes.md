@@ -77,6 +77,21 @@ ar rcs mylib.a file1.o file2.o
 ```
 This will create a static library file called `mylib.a` that includes `file1.o` and `file2.o`.
 
+Certainly! Here's a breakdown of the command `ar rcs libname.a file1.o file2.o` in simple language:
+
+- `ar`: It's a command used to manage archive files.
+  
+- `rcs`: These letters are options for the `ar` command, and they mean the following:
+    - `r`: Replace or add files to the archive. If a file with the same name is already in the archive, it will be replaced.
+    - `c`: Create a new archive if it doesn't already exist.
+    - `s`: Write an index or symbol table for the archive.
+
+- `libname.a`: It's the name you choose for your library file. It should start with "lib" and have the `.a` extension. Replace "libname" with the name you want.
+
+- `file1.o`, `file2.o`: These are the object files you want to include in the library. They contain compiled code that provides specific functionality.
+
+So, when you run this command, it creates or updates a library file called `libname.a` and adds the object files `file1.o` and `file2.o` to it. The library file serves as a container that holds the compiled code and functions from the object files. This library can then be used by other programs during the compilation process to access the functionality provided by the included object files.
+
 3. Index the library: The `ranlib` command is used to generate an index (or table of contents) for the library, which improves efficiency when accessing functions in the library. Run the following command:
 ```shell
 ranlib libname.a
