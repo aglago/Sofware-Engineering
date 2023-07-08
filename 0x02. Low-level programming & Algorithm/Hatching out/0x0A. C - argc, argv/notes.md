@@ -1,3 +1,15 @@
+## Table of Content
++ [Main function arguments](#main-function-arguments)
+	+ [Indexes of argv\[\]](#indexes-of-argv\[\])
+	+ [Important things to note](#important-things-to-note)
+	+ [Use Cases](common-use-cases-and-arguments-for-main-function)
++ [Argc and argv](#argc-and-argv)
++ [How to compile with unused variables](#how-to-compile-with-unused-variables)
++ [Get In touch With Me](#get-in-touch-with-me)
+
+
+
+
 # Main function arguments C
 The main function in C is the entry point of a C program, and it can take command-line arguments. These arguments are passed to the main function when the program is executed. Here are some common arguments that can be passed to the main function in C:
 
