@@ -1,9 +1,9 @@
 # Main function arguments C
 The main function in C is the entry point of a C program, and it can take command-line arguments. These arguments are passed to the main function when the program is executed. Here are some common arguments that can be passed to the main function in C:
 
-1. argc (argument count): It is an integer variable that represents the number of command-line arguments passed to the program. It is always at least 1 because the first argument is the name of the program itself.
+1. **argc (argument count)**: It is an integer variable that represents the number of command-line arguments passed to the program. It is always at least 1 *because the first argument is the name of the program itself.*
 
-2. argv (argument vector): It is an array of strings (character pointers) that holds the command-line arguments. Each element of argv is a null-terminated string representing an argument passed to the program.
+2. **argv (argument vector)**: It is an array of strings (character pointers) that holds the command-line arguments. Each element of argv is a null-terminated string representing an argument passed to the program.
 
 Here's an example signature of the main function that includes these arguments:
 
@@ -20,6 +20,88 @@ int main(int argc, char *argv[])
 + `argc` (argument count): This variable represents the number of command-line arguments passed to the program. It is of type `int`. The value of `argc` is always at least 1 because the first argument is the name of the program itself.
 
 + `argv` (argument vector): This is an array of strings (character pointers) that holds the command-line arguments. Each element of `argv` is a null-terminated string representing an argument passed to the program. The type of `argv` is `char *argv[]`, which means it is an array of character pointers.
+
+## Index of argv[]
+In C, the `argv` parameter in the `main` function represents an array of strings (character pointers) that holds the command-line arguments passed to the program. Each element of `argv` corresponds to a separate command-line argument, including the program name itself.
+
+The index of `argv` allows you to access specific command-line arguments based on their position. Here's some information about the index of `argv`:
+
+- `argv[0]`: `argv[0]` refers to the program name itself. It is a string that contains the name or path of the executable file that is being executed. For example, if you execute the program using the command `./myprogram`, `argv[0]` would be equal to `"./myprogram"`.
+
+- `argv[1]`, `argv[2]`, and so on: These elements correspond to additional command-line arguments provided after the program name. They represent strings that contain the actual values or parameters passed to the program. The index starts at 1 since `argv[0]` represents the program name.
+
+
+Here's an example to illustrate the usage of `argv` and its index:
+- Example: 1
+```bash
+amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ vi 1-main.c
+amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ cat 1-main.c
+#include <stdio.h>
+
+int main(int argc, char* argv[])
+{
+        printf("Argument argv[0] is: %s\n", argv[0]);
+        printf("Argument argv[1] is: %s\n", argv[1]);
+        printf("Argument argv[2] is: %s\n", argv[2]);
+}
+amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ gcc 1-main.c -o 1-main
+amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ ./1-main "Hello" "Ami"
+Argument argv[0] is: ./1-main
+Argument argv[1] is: Hello
+Argument argv[2] is: Ami
+amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$
+```
+
++ In the `1-main.c` file, the program is taking the arguments and printing them out.
++ As already discussed, `argv[0]` is the name of the program itself.
+
+- Example 2:  
+
+```
+./main.c
+
+```c
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    printf("Program name: %s\n", argv[0]);
+
+    for (int i = 1; i < argc; i++)
+    {
+        printf("Argument %d: %s\n", i, argv[i]);
+    }
+
+    return 0;
+}
+```
+
+Suppose you compile and run the above program with the command `./myprogram argument1 argument2`. The output would be:
+
+```
+Program name: ./myprogram
+Argument 1: argument1
+Argument 2: argument2
+```
+
+In this example, `argv[0]` gives you the program name, while `argv[1]` and `argv[2]` provide the subsequent command-line arguments.
+
+By utilizing the index of `argv`, you can access and process the command-line arguments passed to your C program, allowing you to customize its behavior based on the user input from the command line.
+
+
+### Important things to note
++ `argv[argc]` is null.  
+	+ `argc` refers to the number of arguments.
+	+ the last index of any array is *the number of elements - 1*
+	+ therefore, `argv[argc]` will print null as it does not have any value.
++ Indexes
+```bash
+$ ./argv "My School is fun"
+```
+	+ `argv[0]` is ./argv
+	+ `argv[1]` is "My School is fun"
+	+ `argc[2]` is NULL
++ Arguments are strings only
 
 ## common use cases and arguments for the main function:
 
