@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 + `argv` (argument vector): This is an array of strings (character pointers) that holds the command-line arguments. Each element of `argv` is a null-terminated string representing an argument passed to the program. The type of `argv` is `char *argv[]`, which means it is an array of character pointers.
 
-## Index of argv[]
+## Index of `argv[]`
 In C, the `argv` parameter in the `main` function represents an array of strings (character pointers) that holds the command-line arguments passed to the program. Each element of `argv` corresponds to a separate command-line argument, including the program name itself.
 
 The index of `argv` allows you to access specific command-line arguments based on their position. Here's some information about the index of `argv`:
@@ -34,8 +34,8 @@ The index of `argv` allows you to access specific command-line arguments based o
 Here's an example to illustrate the usage of `argv` and its index:
 - Example: 1
 ```bash
-amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ vi 1-main.c
-amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ cat 1-main.c
+$ vi 1-main.c
+$ cat 1-main.c
 #include <stdio.h>
 
 int main(int argc, char* argv[])
@@ -44,8 +44,8 @@ int main(int argc, char* argv[])
         printf("Argument argv[1] is: %s\n", argv[1]);
         printf("Argument argv[2] is: %s\n", argv[2]);
 }
-amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ gcc 1-main.c -o 1-main
-amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$ ./1-main "Hello" "Ami"
+$ gcc 1-main.c -o 1-main
+$ ./1-main "Hello" "Ami"
 Argument argv[0] is: ./1-main
 Argument argv[1] is: Hello
 Argument argv[2] is: Ami
