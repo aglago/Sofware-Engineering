@@ -49,7 +49,7 @@ $ ./1-main "Hello" "Ami"
 Argument argv[0] is: ./1-main
 Argument argv[1] is: Hello
 Argument argv[2] is: Ami
-amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$
+$
 ```
 
 + In the `1-main.c` file, the program is taking the arguments and printing them out.
@@ -59,6 +59,7 @@ amimanye@Manye:~/alx-low_level_programming/0x09-static_libraries/tryout$
 
 ```
 ./main.c
+```
 
 ```c
 #include <stdio.h>
