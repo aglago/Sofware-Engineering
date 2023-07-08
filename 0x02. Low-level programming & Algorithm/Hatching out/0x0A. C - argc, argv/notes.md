@@ -46,8 +46,8 @@ The index of `argv` allows you to access specific command-line arguments based o
 Here's an example to illustrate the usage of `argv` and its index:
 - Example: 1
 ```bash
-<span style="color: blue;">$</span> vi 1-main.c
-<span style="color: blue;">$</span> cat 1-main.c
+\033[34m$\033[0m vi 1-main.c
+\033[34m$\033[0m cat 1-main.c
 #include <stdio.h>
 
 int main(int argc, char* argv[])
@@ -57,11 +57,11 @@ int main(int argc, char* argv[])
         printf("Argument argv[2] is: %s\n", argv[2]);
 }
 $ gcc 1-main.c -o 1-main
-<span style="color: blue;">$</span> ./1-main "Hello" "Ami"
+\033[34m$\033[0m ./1-main "Hello" "Ami"
 Argument argv[0] is: ./1-main
 Argument argv[1] is: Hello
 Argument argv[2] is: Ami
-<span style="color: blue;">$</span>
+\033[34m$\033[0m
 ```
 
 + In the `1-main.c` file, the program is taking the arguments and printing them out.
