@@ -2,7 +2,7 @@
 + [Main function arguments](#main-function-arguments-c)
 	+ [Link to Index of `argv[]`](#index-of-argv)
 	+ [Important things to note](#important-things-to-note)
-	+ [Use Cases](common-use-cases-and-arguments-for-the-main-function)
+	+ [Use cases of main function arguments](#use-cases-of-main-function-arguments)
 + [Argc and argv](#argc-and-argv)
 + [How to compile with unused variables](#how-to-compile-with-unused-variables)
 + [Get In touch With Me](#get-in-touch-with-me)
@@ -116,7 +116,7 @@ $ ./argv "My School is fun"
 	+ `argc[2]` is NULL
 + Arguments are strings only
 
-## common use cases and arguments for the main function:
+## Use cases of main function arguments
 
 1. **Program options or flags**: You can pass options or flags to control the behavior of your program. For example, you might have a flag "-v" to enable verbose output or "-h" to display a help message.
   
