@@ -2,7 +2,7 @@
 + [Main function arguments](#main-function-arguments-c)
 	+ [Link to Index of `argv[]`](#index-of-argv)
 	+ [Important things to note](#important-things-to-note)
-	+ [Use Cases](common-use-cases-and-arguments-for-main-function)
+	+ [Use Cases](common-use-cases-and-arguments-for-the-main-function)
 + [Argc and argv](#argc-and-argv)
 + [How to compile with unused variables](#how-to-compile-with-unused-variables)
 + [Get In touch With Me](#get-in-touch-with-me)
