@@ -1,8 +1,8 @@
 ## Table of Content
 + [Main function arguments](#main-function-arguments-c)
-	+ [Link to Index of `argv[]`](#index-of-argv)
-	+ [Important things to note](#important-things-to-note)
-	+ [Use cases of main function arguments](#use-cases-of-main-function-arguments)
++ [Link to Index of `argv[]`](#index-of-argv)
++ [Important things to note](#important-things-to-note)
++ [Use cases of main function arguments](#use-cases-of-main-function-arguments)
 + [Argc and argv](#argc-and-argv)
 + [How to compile with unused variables](#how-to-compile-with-unused-variables)
 + [Get In touch With Me](#get-in-touch-with-me)
