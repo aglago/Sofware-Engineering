@@ -4,9 +4,12 @@ Memory allocation in C refers to the process of reserving a portion of the compu
 ## Table of content
 + [Types of Memory allocation](#types-of-memory-allocation)
 + [Dynamic Memory allocation](#dynamic-memory-allocation)
-+ [Why allocate memory dynamically? Use cases](#why-allocate-memory-dynamically?-use-cases)
++ [Why allocate memory dynamically? Use cases](#why-allocate-memory-dynamically-use-cases)
 + [malloc](#malloc)
 + [free](#free)
++ [What is a memory leak?](#what-is-a-memory-leak)
++ [How to check for memory leaks](#how-to-check-for-memory-leaks)
++ [Get In touch With Me](#get-in-touch-with-me)
 
 
 ## Types of Memory allocation
