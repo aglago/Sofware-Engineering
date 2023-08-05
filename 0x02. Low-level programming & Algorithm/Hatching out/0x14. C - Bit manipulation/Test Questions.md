@@ -1,6 +1,6 @@
 # Test Questions
 It is time to test your understanding of Bit Manipulation topics.  
-In any point it you need to crosscheck your answers, you can refer to [Solutions](./solutions.md)
+In any point it you need to crosscheck your answers, you can refer to [Solutions](./Solutions.md)
 
 ## Table of Contents
 + [Introduction](#introduction)
