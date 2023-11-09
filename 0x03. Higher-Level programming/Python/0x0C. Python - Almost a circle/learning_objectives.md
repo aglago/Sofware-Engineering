@@ -33,7 +33,7 @@
     - [Does it mean I should always have 100% test coverage? Good practice?](#does-it-mean-i-should-always-have-100-test-coverage-good-practice)
     - [What percentage test coverage should a developer or engineer aim for?](#what-percentage-test-coverage-should-a-developer-or-engineer-aim-for)
     - [How to check for test coverage?](#how-to-check-for-test-coverage)
-    - [Recommended: Writing Tests before Functions or Functions before Tests?](#recommended-writing-tests-before-functions-or-functions-before-tests)
+    - [Recommended: Writing Tests before Functions or Functions before Tests?](#what-is-recommended-writing-tests-before-functions-or-functions-before-tests)
   - [How to write and read a JSON file](#how-to-write-and-read-a-json-file)
     - [Writing JSON File](#writing-json-file)
     - [Reading JSON File](#reading-json-file)
