@@ -38,7 +38,7 @@
     - [Writing JSON File](#writing-json-file)
     - [Reading JSON File](#reading-json-file)
   - [What is `*args` and how to use it](#what-is-args-and-how-to-use-it)
-    - [Positional Arguments](#positional-arguments)
+    - [Positional Arguments](#what-are-positional-arguments)
   - [What is `**kwargs` and how to use it](#what-is-kwargs-and-how-to-use-it)
     - [Keyword Arguments](#keyword-arguments)
 
