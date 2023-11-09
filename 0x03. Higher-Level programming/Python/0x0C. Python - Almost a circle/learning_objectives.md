@@ -7,6 +7,43 @@
 - What is `**kwargs` and how to use it
 - How to handle named arguments in a function
 
+
+# Table of Contents
+
+- [Learning Objectives of Python - Almost a Circle](#learning-objectives-of-python---almost-a-circle)
+  - [What is Unit testing and how to implement it in a large project](#what-is-unit-testing-and-how-to-implement-it-in-a-large-project)
+    - [Choose a Testing Framework](#choose-a-testing-framework)
+    - [Organize Your Code for Testability](#organize-your-code-for-testability)
+      - [Modular Code](#modular-code)
+      - [Loosely Coupled Code](#loosely-coupled-code)
+      - [Dependencies](#dependencies)
+    - [Write Test Cases](#write-test-cases)
+    - [Create a Test Suite](#create-a-test-suite)
+    - [Automate Tests](#automate-tests)
+    - [Continuous Integration (CI)](#continuous-integration-ci)
+    - [Mocking and Stubbing](#mocking-and-stubbing)
+      - [Mocking](#mocking)
+      - [Stubbing](#stubbing)
+    - [Test Coverage](#test-coverage)
+      - [Line Coverage](#line-coverage)
+      - [Branch Coverage](#branch-coverage)
+      - [Function Coverage](#function-coverage)
+      - [Statement Coverage](#statement-coverage)
+      - [Path Coverage](#path-coverage)
+    - [Does it mean I should always have 100% test coverage? Good practice?](#does-it-mean-i-should-always-have-100-test-coverage-good-practice)
+    - [What percentage test coverage should a developer or engineer aim for?](#what-percentage-test-coverage-should-a-developer-or-engineer-aim-for)
+    - [How to check for test coverage?](#how-to-check-for-test-coverage)
+    - [Recommended: Writing Tests before Functions or Functions before Tests?](#recommended-writing-tests-before-functions-or-functions-before-tests)
+  - [How to write and read a JSON file](#how-to-write-and-read-a-json-file)
+    - [Writing JSON File](#writing-json-file)
+    - [Reading JSON File](#reading-json-file)
+  - [What is `*args` and how to use it](#what-is-args-and-how-to-use-it)
+    - [Positional Arguments](#positional-arguments)
+  - [What is `**kwargs` and how to use it](#what-is-kwargs-and-how-to-use-it)
+    - [Keyword Arguments](#keyword-arguments)
+
+
+
 ## What is Unit testing and how to implement it in a large project
 Unit testing is a software testing technique where individual units or components of a software application are tested in isolation. The primary goal of unit testing is to validate that each unit of the software performs as designed. It helps identify and fix bugs early in the development process, making it easier to maintain and enhance the codebase.
 
@@ -17,32 +54,6 @@ To implement unit testing in a large project, follow these steps:
 
 2. **Organize Your Code for Testability:**
    - Write modular and loosely coupled code to make it easier to test individual units. Avoid dependencies that make testing difficult.
-
-3. **Write Test Cases:**
-   - For each unit or function in your code, write test cases that cover various scenarios, including normal use cases, edge cases, and error conditions.
-
-4. **Create a Test Suite:**
-   - Organize your test cases into a test suite. A test suite is a collection of test cases that can be executed together. This helps in managing and running tests efficiently.
-
-5. **Automate Tests:**
-   - Use automation tools provided by the testing framework to run your tests automatically. This ensures that tests are executed consistently and regularly, reducing the chance of introducing bugs.
-
-6. **Continuous Integration (CI):**
-   - Integrate unit tests into your CI/CD (Continuous Integration/Continuous Deployment) pipeline. CI tools like Jenkins, Travis CI, or GitHub Actions can automatically run your tests whenever there's a code change.
-
-7. **Mocking and Stubbing:**
-   - In large projects, you might have dependencies that are external or difficult to set up in a test environment. Use techniques like mocking or stubbing to simulate these dependencies during testing.
-
-8. **Test Coverage:**
-   - Aim for high test coverage, ensuring that your tests exercise a significant portion of your codebase. Tools like coverage.py can help you measure test coverage.
-
-9. **Test Naming Conventions:**
-   - Adopt a consistent naming convention for your test cases. This makes it easy to understand the purpose of each test and helps maintain a clear structure.
-
-10. **Refactor and Iterate:**
-    - As your project evolves, refactor your code and update your tests accordingly. Iteratively improve your tests to maintain their effectiveness.
-
-Remember that unit testing is just one aspect of a comprehensive testing strategy. Integration tests, system tests, and end-to-end tests are also essential to ensure the overall quality of your software. The combination of these testing approaches provides a more robust verification of your code's correctness and reliability.
 
 ### what do you mean by modular and loosely coupled code ? you said to avoid dependencies, what are dependencies you are talking about and how does it make testing difficult ?
 Modular and loosely coupled code are principles of software design that contribute to maintainability, flexibility, and ease of testing. Let me break down these concepts:
@@ -71,6 +82,43 @@ Modular and loosely coupled code are principles of software design that contribu
    - In the context of testing, dependencies can make it challenging to isolate and test individual units (modules or functions) independently. If a module has tight dependencies on other modules, you may need to set up those dependencies or even have external services running for your tests, making them more complex and potentially slower.
 
 In summary, writing modular and loosely coupled code involves designing components that are self-contained, have clear interfaces, and minimize interdependence. This makes the codebase more maintainable, adaptable, and easier to test, as you can focus on testing individual units in isolation without being heavily impacted by changes in other parts of the system.
+
+3. **Write Test Cases:**
+   - For each unit or function in your code, write test cases that cover various scenarios, including normal use cases, edge cases, and error conditions.
+
+4. **Create a Test Suite:**
+   - Organize your test cases into a test suite. A test suite is a collection of test cases that can be executed together. This helps in managing and running tests efficiently.
+
+5. **Automate Tests:**
+   - Use automation tools provided by the testing framework to run your tests automatically. This ensures that tests are executed consistently and regularly, reducing the chance of introducing bugs.
+
+6. **Continuous Integration (CI):**
+   - Integrate unit tests into your CI/CD (Continuous Integration/Continuous Deployment) pipeline. CI tools like Jenkins, Travis CI, or GitHub Actions can automatically run your tests whenever there's a code change.
+
+7. **Mocking and Stubbing:**
+   - In large projects, you might have dependencies that are external or difficult to set up in a test environment. Use techniques like mocking or stubbing to simulate these dependencies during testing.
+
+### What is mocking and stubbing ?
+Mocking and stubbing are techniques used in unit testing to isolate the code being tested from external dependencies, making it possible to test components in isolation.
+
+1. **Mocking:**
+   - **Definition:** Mocking involves creating objects that simulate the behavior of real objects or systems. These mock objects are used as replacements for actual dependencies during testing.
+
+   - **Purpose:** The goal of mocking is to isolate the unit under test from external dependencies, such as databases, APIs, or other complex systems. By using mock objects, you can control the behavior of these dependencies and simulate different scenarios, ensuring that the unit being tested behaves as expected in various conditions.
+
+   - **Example:** If your code interacts with a database, you can create a mock database object that mimics the behavior of the real database. This allows you to test the code without actually accessing the database, making the tests faster and more predictable.
+
+2. **Stubbing:**
+   - **Definition:** Stubbing involves replacing certain methods or functions with simplified versions that return predefined values. Stubs provide specific responses to calls, allowing you to control the behavior of the code being tested.
+
+   - **Purpose:** Similar to mocking, stubbing helps isolate the code being tested by replacing external dependencies with controlled substitutes. Stubs are particularly useful when you want to simulate specific conditions or responses from external components without invoking their full functionality.
+
+   - **Example:** If your code makes HTTP requests to an external API, you can use a stub to replace the actual HTTP request function. The stub would return predefined responses, allowing you to test how your code handles different API responses without actually making network requests.
+
+In summary, both mocking and stubbing are techniques used to create controlled environments for unit testing, allowing developers to focus on testing the specific functionality of their code in isolation. Mocking is more about creating objects that mimic the behavior of real dependencies, while stubbing involves replacing specific methods or functions with simplified versions to control their behavior. These techniques contribute to more effective and predictable unit testing by removing the reliance on external systems during the testing process.
+
+8. **Test Coverage:**
+   - Aim for high test coverage, ensuring that your tests exercise a significant portion of your codebase. Tools like coverage.py can help you measure test coverage.
 
 ### What is test coverage ?
 Test coverage is a metric used in software development to measure the extent to which a codebase is exercised by a set of tests. It quantifies the percentage of your code that is executed when running a particular test suite. The purpose of test coverage analysis is to identify areas of your code that are untested or only partially tested, helping you assess the thoroughness of your testing efforts.
@@ -197,75 +245,13 @@ To check test coverage in a software project, you can use various tools that ana
      pytest --cov=your_module_or_package
      ```
 
-### JavaScript (Node.js):
+9. **Test Naming Conventions:**
+   - Adopt a consistent naming convention for your test cases. This makes it easy to understand the purpose of each test and helps maintain a clear structure.
 
-1. **Istanbul:**
-   - Install the `istanbul` package:
-     ```
-     npm install --save-dev nyc
-     ```
-   - Run your tests with coverage:
-     ```
-     nyc mocha
-     ```
-   - Generate a coverage report:
-     ```
-     nyc report --reporter=text-summary
-     ```
+10. **Refactor and Iterate:**
+    - As your project evolves, refactor your code and update your tests accordingly. Iteratively improve your tests to maintain their effectiveness.
 
-### Java:
-
-1. **JaCoCo:**
-   - If you're using Maven, JaCoCo is commonly used for Java projects.
-   - Add the JaCoCo plugin to your `pom.xml`:
-     ```xml
-     <build>
-         <plugins>
-             <plugin>
-                 <groupId>org.jacoco</groupId>
-                 <artifactId>jacoco-maven-plugin</artifactId>
-                 <version>0.8.7</version>
-                 <executions>
-                     <execution>
-                         <goals>
-                             <goal>prepare-agent</goal>
-                         </goals>
-                     </execution>
-                     <execution>
-                         <id>report</id>
-                         <phase>prepare-package</phase>
-                         <goals>
-                             <goal>report</goal>
-                         </goals>
-                     </execution>
-                 </executions>
-             </plugin>
-         </plugins>
-     </build>
-     ```
-   - Run your tests and generate a report:
-     ```
-     mvn clean verify
-     ```
-
-### C# (.NET):
-
-1. **Coverlet:**
-   - Install the `coverlet.msbuild` NuGet package:
-     ```
-     dotnet add package coverlet.msbuild
-     ```
-   - Run your tests with coverage:
-     ```
-     dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info
-     ```
-   - Generate a coverage report:
-     ```
-     dotnet tool install -g dotnet-reportgenerator-globaltool
-     reportgenerator -reports:./lcov.info -targetdir:coverlet-report -reporttypes:Html
-     ```
-
-These are just examples, and there are other tools available for different languages and frameworks. Check the documentation for the specific tool that fits your project's needs. Using coverage tools is a good practice to ensure that your tests effectively cover your codebase, and it helps you identify areas that may need additional testing.
+Remember that unit testing is just one aspect of a comprehensive testing strategy. Integration tests, system tests, and end-to-end tests are also essential to ensure the overall quality of your software. The combination of these testing approaches provides a more robust verification of your code's correctness and reliability.
 
 ### What is recommended ? Writing Tests before Functions or Functions before tests ?
 The practice of writing tests before writing the actual code is known as Test-Driven Development (TDD). In TDD, the cycle typically involves the following steps:
@@ -299,25 +285,6 @@ Benefits of Test-Driven Development (TDD):
 However, it's essential to note that TDD is just one approach, and it might not be suitable for every situation. Some developers prefer to write tests after implementing the code, especially in cases where the requirements are not clear, or the design is expected to evolve significantly.
 
 Ultimately, the choice between writing tests before or after code depends on the project, team dynamics, and personal preferences. Some developers find TDD to be a valuable practice, while others prefer a more exploratory approach. The key is to ensure that your code is thoroughly tested, regardless of the order in which tests and code are written.
-
-### What is mocking and stubbing ?
-Mocking and stubbing are techniques used in unit testing to isolate the code being tested from external dependencies, making it possible to test components in isolation.
-
-1. **Mocking:**
-   - **Definition:** Mocking involves creating objects that simulate the behavior of real objects or systems. These mock objects are used as replacements for actual dependencies during testing.
-
-   - **Purpose:** The goal of mocking is to isolate the unit under test from external dependencies, such as databases, APIs, or other complex systems. By using mock objects, you can control the behavior of these dependencies and simulate different scenarios, ensuring that the unit being tested behaves as expected in various conditions.
-
-   - **Example:** If your code interacts with a database, you can create a mock database object that mimics the behavior of the real database. This allows you to test the code without actually accessing the database, making the tests faster and more predictable.
-
-2. **Stubbing:**
-   - **Definition:** Stubbing involves replacing certain methods or functions with simplified versions that return predefined values. Stubs provide specific responses to calls, allowing you to control the behavior of the code being tested.
-
-   - **Purpose:** Similar to mocking, stubbing helps isolate the code being tested by replacing external dependencies with controlled substitutes. Stubs are particularly useful when you want to simulate specific conditions or responses from external components without invoking their full functionality.
-
-   - **Example:** If your code makes HTTP requests to an external API, you can use a stub to replace the actual HTTP request function. The stub would return predefined responses, allowing you to test how your code handles different API responses without actually making network requests.
-
-In summary, both mocking and stubbing are techniques used to create controlled environments for unit testing, allowing developers to focus on testing the specific functionality of their code in isolation. Mocking is more about creating objects that mimic the behavior of real dependencies, while stubbing involves replacing specific methods or functions with simplified versions to control their behavior. These techniques contribute to more effective and predictable unit testing by removing the reliance on external systems during the testing process.
 
 ## How to write and read a JSON file
 In Python, you can use the `json` module to write and read JSON files. Here's a basic guide:
