@@ -104,3 +104,20 @@ include main.o lib.o
 ```
 
 This tells Make to include the contents of the "header.h" file into the "all.exe" executable. Now, we have a complete recipe for our "all" target!
+
+
+## What are rules and how to set and use them
+
+Rules are the core building blocks of a Makefile. They specify the steps that are needed to create a target. We can add rules to our Makefile by using the "rule" keyword. For example, we could add a rule to our "main.o" target like this:
+
+```
+main.o: main.c
+g++ -c main.c -o main.o
+```
+
+This rule tells Make that to create the "main.o" target, it needs to compile the "main.c" file. And it tells Make to use the "g++" command with the "-c" option to create an object file. 
+
+Basically, what we were referring to earlier as recipes 🤗.
+
+
+## 
