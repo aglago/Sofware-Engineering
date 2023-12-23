@@ -28,10 +28,12 @@ gcc hello.c -o hello
 This makefile tells Make to build the program "hello" from the source file "hello.c". It also tells Make to use the gcc compiler to compile the program.
 
 **Makefiles**
+
 As I mentioned, Makefiles are configuration files that are used by Make. They use a special syntax to specify the steps that should be taken to build the program. For example, the "all" and "hello" lines in the makefile are targets specifications, whereas the "all" and "hello" keywords are called targets.These targets are the end goals of the makefile, in our example the "hello" target is what we want to build, is the executable file we want to end up with. Tha "all" target is a specual target that is used to build all of the other targets in the makefile like "docs" fkr documentations, "tests" target that runs unit tests.
 
 The lines that start with ":" are called dependencies, and they tell Make which files are needed to build the target. 
 
+```
 Targets Specification
     >>>> all:hello
         >> Target: all
@@ -40,9 +42,65 @@ Targets Specification
     >>>> hello:hello.c
         >> Target: hello
         >> Dependency: hello.c
+```
 
 Let's break it down step by step. The "all:hello" line is telling Make that the "all" target depends on the "hello" target. So when you run the make command, it will try to build the "hello" target. The "hello" target depends on the "hello.c" file, so Make will try to find that file. Once it has the "hello.c" file, it will run the recipe, which tells it to use the gcc compiler to build the "hello" executable. So the "hello.c" dependency tells Make what what files it needs to build the "hello" target. The recipe tells Make how to build the "hello" target. And the "all" target is the starting point that tells Make where to begin.
 
 The "all" target is a special target that doesn't depend on any files. Instead, it's used to build other targets, like "hello". So if you were to run the make command without any arguments, it would try to build all of the targets in the makefile, starting with the "all" target. And the "all" target would then build the "hello" target. Does that make sense?
 
 ## When, why and how to use Makefiles
+
+**When**
+
+Makefiles are typically used when you have multiple source files that need to be compiled into one executable file. For example, if you had a project with a main.c file, a lib.c file, and a header.h file, you could use a Makefile to compile all of those files into a single executable file. Without a Makefile, you would need to manually compile each file yourself. A Makefile makes it easier to manage multiple source files and ensure that they are all compiled correctly.
+
+**Why**
+
+So why would you want to use a Makefile? There are several reasons. 
+- First, Makefiles help to automate the build process. This can save you time and prevent mistakes. 
+
+- Second, Makefiles allow you to specify different build configurations. For example, you could have a development build that includes debugging symbols, or a release build that is optimized for performance. Let's use an example to make it clearer. Let's say you have a C++ project with a main.cpp file, a lib.cpp file, and a header.h file. You could have two different build configurations: a development build and a release build. The development build would include extra information like debug symbols that would help you debug your code. The release build would be optimized for performance, so it would run faster. Using a Makefile, you could specify which build configuration to use when you run the make command. 
+
+- Finally, Makefiles make it easier to build on different platforms or with different compilers. That way, you can be sure that your project will build correctly on any system.
+
+**How**
+
+I'll start with the basic structure of a Makefile. A Makefile is a text file with a specific syntax. The first line of the file must be the name of the target to build. This is typically "all", but it can be any name you choose. The next line should be the dependencies for the target. For example, if you had a target called "all", you could specify that it depends on "main.c", "lib.c", and "header.h". Then, you would need to specify the commands to build the target. For example, you could specify "g++ main.
+
+Let's consider these files as part of our project files:
+
+```
+main.c
+lib.c
+header.h
+```
+
+let's write a makefile to compile them. 
+
+We'll go through it step by step! First, we'll need to create a new text file and name it "Makefile". Then, we'll add the following lines:
+
+```
+all: main.o lib.o
+main.o: main.c
+lib.o: lib.c
+```
+
+The first line tells Make that the "all" target depends on the "main.o" and "lib.o" targets. The second line tells Make that the "main.o" target depends on the "main.c" file. And the third line tells Make that the "lib.o" target depends on the "lib.c" file. Now, we need to specify the commands to build each target. For the "main.o" target, we'll need to use the "g++" command to compile the "main.c" file. And for the "lib.o" target, we'll need to use the "g++" command to compile the "lib.c"  file.
+
+Okay, now we're getting to the fun part! To complete the "all" target's recipe, we need to link the "main.o" and "lib.o" targets together. To do this, we'll use the "g++" command again, with the "-o" option to specify the output file name. Our final recipe will look like this:
+
+```
+all: main.o lib.o
+main.o: main.c
+lib.o: lib.c
+g++ main.o lib.o -o all.exe
+```
+
+This will build the "all.exe" executable, but it doesn't do anything with the "header.h" file. To include the "header.h" file, we'll need to add another line to the recipe:
+
+```
+header.h:
+include main.o lib.o
+```
+
+This tells Make to include the contents of the "header.h" file into the "all.exe" executable. Now, we have a complete recipe for our "all" target!
