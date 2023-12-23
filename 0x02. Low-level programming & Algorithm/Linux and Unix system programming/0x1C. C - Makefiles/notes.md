@@ -145,3 +145,17 @@ There are a few rules that are commonly used in Makefiles.
 - The "link" rule is used to link object files together to create a single executable file. 
 
 - And the "archive" rule is used to create archives of files, which can be useful for distributing your project.
+
+
+## What are variables and how to set and use them
+
+Variables are another important part of Makefiles. They allow you to store values that can be used by the rules in your Makefile. You can define variables using the "define" or "set" keywords, and you can use them in your rules using the "$(VARIABLE)" notation. For example, you could define a variable called "SOURCE_DIR" like this:
+
+define SOURCE_DIR = ~/projects/my_project
+
+And then you could use this variable in a rule like this:
+
+```
+all: main.o
+gcc $(SOURCE_DIR)/main.c -o all.exe
+```
