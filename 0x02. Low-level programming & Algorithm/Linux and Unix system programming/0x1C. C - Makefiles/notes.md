@@ -126,3 +126,22 @@ An explicit rule is a rule that you define explicitly in your Makefile. For exam
 
 An implicit rule is a rule that is defined by Make itself, based on the extension of the target file. In our example, the rule that turns a ".c" file into a ".o" file is an implicit rule because it's not defined in our Makefile. Instead, it's defined by the "g++" command itself. So, whenever we try to create a ".o" file, Make will automatically use the implicit rule to create it from a ".c" file. We don't need to define this rule explicitly because Make already knows how to create it.
 
+
+## What are the most common / useful rules
+
+There are a few rules that are commonly used in Makefiles. 
+- The first is the "all" rule, which is used to build the main target of your Makefile. This rule is typically the entry point for your Makefile, and it will call any other rules that are required to build your project.
+
+- Another common rule is the "clean" rule, which is used to clean up any temporary files that were created during the build process. 
+
+- Other common rules include the "install" rule, which is used to install your project into a specific location, 
+
+- and the "test" rule, which is used to run any tests that are part of the projects
+
+- other common rules include the "compile" rule, the "link" rule, and the "archive" rule. 
+
+- The "compile" rule is used to compile source files into object files. 
+
+- The "link" rule is used to link object files together to create a single executable file. 
+
+- And the "archive" rule is used to create archives of files, which can be useful for distributing your project.
