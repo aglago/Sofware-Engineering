@@ -1,6 +1,6 @@
-# Shell Navigation Notes
+# Emacs Notes
 
-This repository contains detailed notes on various software engineering topics, serving as a comprehensive resource for software engineering enthusiasts, students, and professionals.
+This repository contains detailed notes on Emacs, serving as a comprehensive resource for software engineering enthusiasts, students, and professionals.
 
 ## Table of Contents
 
