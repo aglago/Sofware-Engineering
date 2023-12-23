@@ -9,7 +9,7 @@ This repository contains detailed notes on Emacs, serving as a comprehensive res
 - [Learning Objectives](#learning-objectives)
 - [Notes](#Notes)
 - [Exercises](#exercises)
-- [Project](#project)
+- [Project](#projects)
 - [Summary](#summary)
 - [Next Lesson](#next-lesson)
 - [Contact](#get-in-touch-with-me)
