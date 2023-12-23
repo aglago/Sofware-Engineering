@@ -120,4 +120,9 @@ This rule tells Make that to create the "main.o" target, it needs to compile the
 Basically, what we were referring to earlier as recipes 🤗.
 
 
-## 
+## What are explicit and implicit rules
+
+An explicit rule is a rule that you define explicitly in your Makefile. For example, the rules we've looked at so far are all explicit rules. An implicit rule is a rule that is not defined in your Makefile, but is instead defined by Make itself. For example, the "g++" command we've been using has an implicit rule that tells Make how to build a ".o" object file from a ".c" source file.
+
+An implicit rule is a rule that is defined by Make itself, based on the extension of the target file. In our example, the rule that turns a ".c" file into a ".o" file is an implicit rule because it's not defined in our Makefile. Instead, it's defined by the "g++" command itself. So, whenever we try to create a ".o" file, Make will automatically use the implicit rule to create it from a ".c" file. We don't need to define this rule explicitly because Make already knows how to create it.
+
