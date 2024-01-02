@@ -60,6 +60,12 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ## Summary
 
+- Binary trees are a type of data structure used to store and organize data in a hierarchical manner.
+- Each node in a binary tree can have at most two children.
+- Binary trees can be used to support efficient searching, insertion, and retrieval of data.
+- There are three main types of traversal for binary trees: inorder, preorder, and postorder.
+- There are several different types of binary trees, including complete, full, perfect, and balanced.
+
 ## Next Lesson
 
 [0x01. Shell, permissions](../)
