@@ -52,7 +52,22 @@ The main difference between a hard link and a symbolic link is how they refer to
 
 ### Working with Commands
 - What do `type`, `which`, `help`, `man` commands do
+
+These are all command-line utilities used in Linux and other Unix-like operating systems.
+- "type" lists the file types of specified command names
+- "which" displays the location of the specified command
+- "help" provides help for a specified command
+- "man" provides a manual page for a given command
+These commands can be used to get information about commands, including their options and usage. They can be particularly useful for developers and system administrators who need to use command-line utilities.
+
+
 - What are the different kinds of commands
+
+There are generally four main types of commands in Linux:
+*Built-in commands*: These are commands that are built into the shell itself, and do not require an external program to be executed. Examples include "cd", "pwd", "echo".
+*Executable commands*: These are commands that are executed by an external program. For example, the "ls" command is a built-in command, but the "find" command is an executable program. Internal commands: These are commands that are executed by the shell, but are not built-in. These commands are typically stored in a system directory
+
+
 - What is an alias
 - When do you use the command help instead of man
 
@@ -66,3 +81,5 @@ The main difference between a hard link and a symbolic link is how they refer to
 
 ### LTS
 - What does `LTS` mean?
+
+"LTS" stands for "long-term support". It refers to a version of a software product that is supported for a longer period of time than a standard release. LTS releases typically receive security and bug fixes for an extended period of time, making them a good choice for users who need a stable, secure platform. Many operating systems, including Linux distributions, offer an LTS release. For example, Ubuntu Linux has an LTS release that is supported for five years.
