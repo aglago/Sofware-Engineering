@@ -41,11 +41,27 @@ A query string is a string of characters that is added to the end of a URL to se
 Is there anything else you want to know about query strings?
 
 
-What an HTTP request is
-What an HTTP response is
-What HTTP headers are
-What the HTTP message body is
-What an HTTP request method is
+- What an HTTP request is
+
+An HTTP request is a message that is sent from a client (such as a web browser) to a server (such as a web server) to request a resource, such as a web page or an image. An HTTP request typically includes a request method (such as GET or POST), a URL that specifies the resource being requested, and any additional data that is needed to process the request (such as query strings or cookies). The server then responds with an HTTP response, which includes the requested resource, as well as any additional data that the server needs to provide (such as headers or cookies).
+
+
+- What an HTTP response is
+
+An HTTP response is the message that a server sends back to a client after receiving an HTTP request. The response includes the requested resource (such as a web page or an image), as well as any additional data that the server needs to send (such as headers or cookies). The response also includes an HTTP status code that indicates whether the request was successful or not. For example, the status code 200 means that the request was successful, while the status code 404 means that the resource could not be found. The response may also include additional details about the error if the request was unsuccessful.
+
+
+- What HTTP headers are
+
+HTTP headers are additional pieces of data that are sent along with an HTTP request or response. These headers typically contain metadata about the request or response, such as the user agent (the browser or other application that is making the request), the date and time of the request, the character encoding of the content, and any cookies that need to be sent along with the request or response. Some headers, such as the "Content-Type" header, are required for the request or response to be valid, while others are optional. Some examples of common HTTP headers include "User-Agent", "Accept-Language", and "Content-Length".
+
+
+- What the HTTP message body is
+
+The HTTP message body is the data that is being requested or sent along with an HTTP request or response. The message body is contained within the "Body" section of the HTTP message, which is located after the headers. For example, if you request a web page from a server, the message body would contain the HTML code for the page. If you were to request an image from a server, the message body would contain the image data. The message body can be sent as plain text, but it can also be sent as compressed data, binary data, or other formats.
+
+
+- What an HTTP request method is
 What an HTTP response status code is
 What an HTTP Cookie is
 How to make a request with cURL
