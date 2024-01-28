@@ -18,6 +18,7 @@ Reading a URL is actually pretty straightforward. The first part of the URL is t
 
 
 - The scheme for a HTTP URL
+
 In a URL, the "scheme" refers to the protocol (like "http" or "https"). So, when you see a URL like "https://google.com", the scheme is "https". The scheme is important because it tells the browser how to interpret the rest of the URL. In the case of "https", it means that the browser should use the secure version of HTTP. There are lots of other schemes, like "ftp" for File Transfer Protocol or "mailto" for email.
 
 - What a domain name is
@@ -31,7 +32,15 @@ A subdomain is a part of a domain name that's used to organize different parts o
 
 
 - How to define a port number in a URL
-What a query string is
+
+When defining a port number in a URL, you use the format "port:number". For example, to access a website using port 80, you would use the URL "http://example.com:80". If the website uses a different port, such as port 8080, you would use the URL "http://example.com:8080". Most websites use port 80 for HTTP and port 443 for HTTPS, but you can specify any port number that the server is listening on. Some websites may also use non-standard ports for other services, such as FTP or SMTP.
+
+- What a query string is
+
+A query string is a string of characters that is added to the end of a URL to send additional information to the server. The query string is separated from the rest of the URL by a question mark (?) and is composed of key-value pairs. For example, a URL might look like this: "http://example.com/page.html?q=search-term". The query string in this example includes the key "q" with the value "search-term". The server can then use this information to perform a search for the given term. Query strings can also be used to pass other types of information, such as including parameters for filtering search results, logging in to a website, and tracking analytics. They're a common way to send information to the server without changing the URL itself.
+Is there anything else you want to know about query strings?
+
+
 What an HTTP request is
 What an HTTP response is
 What HTTP headers are
