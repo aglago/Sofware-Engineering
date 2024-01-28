@@ -62,7 +62,21 @@ The HTTP message body is the data that is being requested or sent along with an 
 
 
 - What an HTTP request method is
-What an HTTP response status code is
-What an HTTP Cookie is
-How to make a request with cURL
+
+An HTTP request method is a standardized way of describing the desired action for an HTTP request. For example, the most common request method is GET, which is used to request a resource from a server. Other common request methods include POST, which is used to send data to a server to create or update a resource, and PUT, which is used to update an existing resource on the server. Other less common methods include DELETE, which is used to delete a resource from the server, and HEAD, which is used to get the headers of a resource without the message body.
+
+
+- What an HTTP response status code is
+
+An HTTP response status code is a three-digit code that indicates the outcome of an HTTP request. There are five categories of status codes: 1xx, which are informational messages, 2xx, which are successful responses, 3xx, which indicate that the request needs to be redirected, 4xx, which indicate that there was an error on the client side, and 5xx, which indicate that there was an error on the server side. Each category has several specific status codes, such as 200 for a successful response, 404 for a resource not found, and 500 for an internal server error. The status codes are defined in RFC 7231 and they provide a standardized way of communicating the outcome of an HTTP request. Knowing the status codes can be very useful for debugging, as they can help you identify and fix any issues with your HTTP requests. There are many status codes, so it's not possible to go over them all here, but I can tell you about some of the most common ones.
+
+
+- What an HTTP Cookie is
+
+An HTTP cookie is a small piece of data that is sent by a server to a client, and it is stored by the client and sent back to the server with future requests. Cookies are used for many purposes, such as remembering user preferences, storing session information, tracking users, and personalizing web pages. Cookies are sent using the "Set-Cookie" response header, and they are usually stored in a cookie file on the client's computer. Cookie files are managed by the web browser, and you can view and delete them in the browser settings.
+
+
+- How to make a request with cURL
+
+
 What happens when you type google.com in your browser (Application level)
