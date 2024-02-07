@@ -18,6 +18,7 @@ This repository contains detailed notes on Processes and Signals, serving as a c
 - [Process management in linux](https://www.digitalocean.com/community/tutorials/process-management-in-linux)
 
 ## Learning Objectives
+Answers to the learning objectives can be found [here](./learning_objectives)  
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ### General
