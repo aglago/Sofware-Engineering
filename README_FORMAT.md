@@ -13,9 +13,10 @@ This repository contains detailed notes and making you understand the need to ha
 
 ## Resources
 **Read / Watch**
--
+- []()
 
 ## Learning Objectives
+Answers to the learning objectives can be found [here](./learning_objectives)  
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ### General
