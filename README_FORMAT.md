@@ -7,7 +7,6 @@ This repository contains detailed notes and making you understand the need to ha
 + [Learning Objectives](#learning-objectives)
 + [Notes](#Notes)
 + [Project](#project)
-+ [Summary](#summary)
 + [Next Lesson](#next-lesson)
 
 
@@ -27,9 +26,6 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 
 ## Project
-
-
-## Summary
 
 
 ## Next Lesson
