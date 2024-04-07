@@ -31,3 +31,4 @@ In Linux, a signal is a notification that's sent to a process to inform it of an
 
 There are two signals that can't be ignored in Linux: "SIGKILL" and "SIGSTOP". The "SIGKILL" signal is a forceful way of telling the process to terminate immediately, and it can't be blocked or ignored by the process. The "SIGSTOP" signal tells the process to stop all activity, and it can't be ignored either. These signals are important because they can be used to terminate processes that are stuck or not responding.
 
+
